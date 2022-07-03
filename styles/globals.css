@@ -1,16 +1,46 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+html,body{
+  hyphens: auto;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Jost', sans-serif;
+  color: #FFFFFF;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background: #232629;
+  display: block;
 }
+.container{
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 7rem;
+  max-width: 1000px;
+  display: block
+}
+.hovercircle{
+  padding: .3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.hovercircle:hover{
+  animation: show 200ms ease-in;
+  background: #aeaeaa2f;
+}
+.container section{
 
-* {
-  box-sizing: border-box;
+}
+@keyframes show {
+  from{
+    background: #aeaeaa00;
+  }
+  to{
+    background: #aeaeaa2f;
+  }
 }
