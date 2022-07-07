@@ -21,6 +21,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.topnav .menutitle{
+    font-size: 22px;
+    font-weight: 600;
+}
 .navbar nav .pager{
     display: flex;
     justify-content: center;
@@ -52,10 +56,6 @@
     padding: 2px;
     bottom: 0;
     border-radius: 6px 6px 0 0;
-}
-.navbar nav .menutitle{
-    font-size: 22px;
-    font-weight: 400;
 }
 .menuicon{
     font-size: 28px;

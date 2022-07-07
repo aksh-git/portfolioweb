@@ -12,7 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={styles.main}>
-        <div className={styles.welcometxt} align="center">Welcome!</div>
+        <div className={styles.mainbanner}>
+          <div className={styles.welcometxt} align="center">Welcomes You!!</div>
+        </div>
       </section>
     </div>
   )
