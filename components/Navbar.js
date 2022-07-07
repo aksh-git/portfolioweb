@@ -2,13 +2,18 @@ import React, { useState, useEffect } from 'react'
 import styles from '../styles/Navbar.module.css'
 import { BiMenu } from 'react-icons/bi'
 import { AiTwotoneHeart } from 'react-icons/ai'
+import { MdOutlineClose } from 'react-icons/md'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 function Navbar(props) {
-
+  const profile_url = process.env.PROFILE_PIC_URL;
   const router = useRouter()
   const [path, setpath] = useState(router.pathname)
+  const [navmenu, setnavmenu] = useState(true)
+
+  console.log(profile_url);
 
   useEffect(() => {
     if(router.isReady){
@@ -20,7 +25,7 @@ function Navbar(props) {
     <div className={styles.navbar}>
       <nav>
         <div className={styles.topnav}>
-            <BiMenu title='Menu' className={`${styles.menuicon} hovercircle`} />
+            <BiMenu onClick={()=>{setnavmenu(!navmenu)}} title='Menu' className={`${styles.menuicon} hovercircle`} />
             <span className={styles.menutitle}>Akash Yadav</span>
             <AiTwotoneHeart title='Support' className={`${styles.menuicon} hovercircle`} />
         </div>
@@ -39,11 +44,26 @@ function Navbar(props) {
             </div></Link>
         </div>
       </nav>
-      <div className={styles.menu}>
+      <div style={{display:navmenu?"":"none"}} onClick={()=>{setnavmenu(false)}} className={styles.menu}>
         <div className={styles.wrap}>
             <div className={styles.inside}>
+                <div className={styles.closebtn}>
+                 <span>Close menu</span>
+                 <MdOutlineClose className={`${styles.menuicon} hovercircle`} />
+                </div>
                 <div className={styles.banner}>
-                    <Image
+                  <img src='https://pbs.twimg.com/profile_images/1443777771134619650/z4EfFnEY_400x400.jpg' alt="profile-image" />
+                  <span className={styles.name}>Akash yadav</span>
+                  <span className={styles.title}>Full Stack developer</span>
+                </div>
+                <ul className={styles.menulist}>
+                  <li>Projects</li>
+                  <li>Feedback</li>
+                  <li>About</li>
+                </ul>
+                <div className={styles.menuBtnContainer}>
+                  <button className={styles.hiremebtn}>Hire-Me</button>
+                  <button className={styles.connectbtn}>Connect</button>
                 </div>
             </div>
         </div>

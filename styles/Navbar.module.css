@@ -47,7 +47,7 @@
     margin: auto;
     left: 0;
     right: 0;
-    background-color: #eeeeeeb6;
+    background-color: #2397DE;
     width: 80%;
     padding: 2px;
     bottom: 0;
@@ -57,7 +57,7 @@
     font-size: 22px;
     font-weight: 400;
 }
-.navbar nav .menuicon{
+.menuicon{
     font-size: 28px;
 }
 .menu{
@@ -67,16 +67,120 @@
     width: 100%;
     background-color: #121416a8;
     min-height: 100vh;
+    animation: slowpop 100ms linear;
+    z-index: 10;
 }
 .menu .wrap{
     width: 270px;
     background-color: #2E353D;
     min-height: 100vh;
+    z-index: 100;
+    animation: slideright 200ms ease-in-out;
 }
 .wrap .inside{
     padding: 10px;
     min-height: 100%;
 }
 .inside .banner{
+    padding: 5%;
+    display: inline-grid;
+    border-bottom: 4px solid #aeaeaa2f;
+    border-radius: 4px;
+}
+.banner .name{
+    margin-top: 0.3rem;
+    font-size: 24px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+}
+.banner .title{
+    margin-top: -0.356rem;
+    font-size: 18px;
+    color: #ffffffb0;
+    filter: drop-shadow(0 0 1px #2397DE);
+}
+.inside .banner img{
+    width: 50%;
+    border-radius: 24px;
+}
+.inside .closebtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #aeaeaa2f;
+    cursor: pointer;
+}
+.inside .closebtn span{
+    padding: 0 5%;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+}
+.inside .menulist{
+    list-style-type: none;
+    padding: 0 5%;
+}
+.menulist li{
+    outline: none;
+    padding: 3% 1rem;
+    /* background-color: #545e69; */
+    margin: 4px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 450;
+    letter-spacing: 0.2px;
+}
+.menulist li:hover{
+    /* background-color: #444c55; */
+    background-color: #aeaeaa2f;
+    color: #2397DE;
+}
+.menuBtnContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+.menuBtnContainer button{
+    all: unset;
+    background-color: #aeaeaa2f;
+    padding: 0.5rem 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 450;
+    letter-spacing: 0.3px;
+    margin: 5px 0;
+}
+.menuBtnContainer .connectbtn{
+    background-color: #2397DE;
+}
+.menuBtnContainer .connectbtn:hover, .hiremebtn:hover{
+    background-color: #aeaeaa2f;
+    color: #2397DE;
+    box-shadow: 0 0 2px #2397DE;
     
+}
+
+@keyframes slideright {
+    from{
+        margin-left: -100vw;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+@keyframes slowpop {
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+@media  only screen and (max-width: 520px) {
+    .menu .wrap{
+        width: 70%;
+    }
 }
