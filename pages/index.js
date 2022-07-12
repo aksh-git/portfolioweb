@@ -13,7 +13,13 @@ export default function Home() {
       </Head>
       <section className={styles.main}>
         <div className={styles.mainbanner}>
-          <div className={styles.welcometxt}>Welcomes You!!</div>
+          <div className={styles.welcometxt}>
+            <svg width="100%" height="100%">        
+              <text x="50%" y="60%"  text-anchor="middle"  >
+                Welcomes You!!
+              </text>
+            </svg>
+          </div>
         </div>
       </section>
     </div>

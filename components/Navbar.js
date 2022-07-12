@@ -27,7 +27,7 @@ function Navbar(props) {
       <nav>
         <div className={styles.topnav}>
           <BiMenu onClick={()=>{setnavmenu(!navmenu)}} title='Menu' className={`${styles.menuicon} hovercircle`} />
-          <span className={styles.menutitle}><Logo color='#2397DE' options={{height:'28',width:'28'}} /> Akash <span style={{color:'#2397DE'}}>Yadav</span></span>
+          <span className={styles.menutitle}><Logo color='#2397DE' options={{height:'28',width:'30'}} /> Akash <span style={{color:'#2397DE'}}>Yadav</span></span>
           <AiTwotoneHeart fill='#CC3E4A' title='Support' className={`${styles.menuicon} hovercircle`} />
         </div>
         <div className={styles.pager}>
