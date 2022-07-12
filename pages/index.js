@@ -15,7 +15,7 @@ export default function Home() {
         <div className={styles.mainbanner}>
           <div className={styles.welcometxt}>
             <svg width="100%" height="100%">        
-              <text x="50%" y="60%"  text-anchor="middle"  >
+              <text x="50%" y="60%"  textAnchor="middle"  >
                 Welcomes You!!
               </text>
             </svg>
