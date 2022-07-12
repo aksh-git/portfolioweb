@@ -3,14 +3,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 24px;
-    display: block;
     text-align: center;
-    padding: 1%;
 }
 .welcometxt svg text {
     font-family: Arial, Helvetica, sans-serif;
     stroke: #2396de;
-    font-size: 4.5rem;
+    font-size: 3em;
     font-weight: 700;
     stroke-width: 2;
     animation: textAnimate 5s infinite alternate;
@@ -20,7 +18,6 @@
     stroke-dasharray: 0 50%;
     stroke-dashoffset:  20%;
     fill:#2396de;
-
   }
   100% {
     stroke-dasharray: 50% 0;
