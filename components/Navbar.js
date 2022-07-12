@@ -6,12 +6,13 @@ import { MdOutlineClose } from 'react-icons/md'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import Logo from './Logo'
 
 function Navbar(props) {
   const profile_url = process.env.PROFILE_PIC_URL;
   const router = useRouter()
   const [path, setpath] = useState(router.pathname)
-  const [navmenu, setnavmenu] = useState(true)
+  const [navmenu, setnavmenu] = useState(false)
 
   console.log(profile_url);
 
@@ -26,7 +27,7 @@ function Navbar(props) {
       <nav>
         <div className={styles.topnav}>
           <BiMenu onClick={()=>{setnavmenu(!navmenu)}} title='Menu' className={`${styles.menuicon} hovercircle`} />
-          <span className={styles.menutitle}>Akash <span style={{color:'#2397DE'}}>Yadav</span></span>
+          <span className={styles.menutitle}><Logo color='#2397DE' options={{height:'28',width:'28'}} /> Akash <span style={{color:'#2397DE'}}>Yadav</span></span>
           <AiTwotoneHeart fill='#CC3E4A' title='Support' className={`${styles.menuicon} hovercircle`} />
         </div>
         <div className={styles.pager}>

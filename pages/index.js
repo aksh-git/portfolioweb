@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <section className={styles.main}>
         <div className={styles.mainbanner}>
-          <div className={styles.welcometxt} align="center">Welcomes You!!</div>
+          <div className={styles.welcometxt}>Welcomes You!!</div>
         </div>
       </section>
     </div>
