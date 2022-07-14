@@ -15,13 +15,15 @@ export default function Home() {
       <section className={styles.main}>
         <div className={styles.mainbanner}>
           <div className={styles.welcometxt}>
-            <svg width="100%" height="100%">        
-              <text x="50%" y="60%"  textAnchor="middle"  >
+            <svg>
+              <text x="50%" y="90%"  textAnchor="middle"  >
                 Welcomes You!!
               </text>
             </svg>
+            <h1>zxjvcvchbscsdc</h1>
+            bxdjvhsjdhvjjh h
           </div>
-          <div  className={styles.bannerRight}>
+          <div className={styles.bannerRight}>
             <Image src={bannerImg} width={750} height={550}/>
           </div>
         </div>

@@ -9,7 +9,14 @@
   min-height: 100%;
 }
 .welcometxt{
-  width: 70%;
+  width: 60%;
+}
+.bannerRight{
+  width: 40%;
+}
+.welcometxt svg{
+  height: 80px;
+  width: 400px;
 }
 .welcometxt svg text {
   font-family: Arial, Helvetica, sans-serif;
@@ -36,6 +43,7 @@
   .bannerRight{
     position: absolute;
     top: 0;
+    width: 90%;
     z-index: inherit;
     filter: opacity(0.3);
   }
@@ -43,6 +51,10 @@
     width: 100%;
     position: relative;
     z-index: 10;
+  }
+  .welcometxt svg {
+    height: 100%;
+    width: 100%;
   }
   .welcometxt svg text{
     font-size: 35px;
