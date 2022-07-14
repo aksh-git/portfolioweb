@@ -1,23 +1,30 @@
 .mainbanner{
-    background: url('https://cdna.artstation.com/p/assets/images/images/025/752/592/large/joshua-golde-waben05.jpg?1586815577');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 24px;
-    text-align: center;
+  /* background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #aeaeaa2f; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100%;
+}
+.welcometxt{
+  width: 70%;
 }
 .welcometxt svg text {
-    font-family: Arial, Helvetica, sans-serif;
-    stroke: #2396de;
-    font-size: 3em;
-    font-weight: 700;
-    stroke-width: 2;
-    animation: textAnimate 5s infinite alternate;
+  font-family: Arial, Helvetica, sans-serif;
+  stroke: #2396de;
+  font-size: 3em;
+  font-weight: 700;
+  fill: #f2f2f2;
+  stroke-width: 2;
+  animation: textAnimate alternate 7s 2 forwards;
 }
 @keyframes textAnimate {
   0% {
     stroke-dasharray: 0 50%;
     stroke-dashoffset:  20%;
-    fill:#2396de;
+    fill:#e7e5e5;
   }
   100% {
     stroke-dasharray: 50% 0;
@@ -26,8 +33,24 @@
   }
 }
 @media only screen and (max-width: 900px) {
-    .welcometxt svg text{
-        font-size: 45px;
-    }
+  .bannerRight{
+    position: absolute;
+    top: 0;
+    z-index: inherit;
+    filter: opacity(0.3);
   }
+  .welcometxt{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  .welcometxt svg text{
+    font-size: 35px;
+    stroke-width: 1;
+  }
+  .mainbanner{
+    display: block;
+    align-items: center;
+  }
+}
 

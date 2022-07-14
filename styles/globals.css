@@ -23,8 +23,8 @@ body {
   margin: auto;
   left: 0;
   right: 0;
-  top: 7rem;
-  max-width: 1000px;
+  top: 1em;
+  max-width: 1100px;
   display: block;
 }
 .hovercircle{

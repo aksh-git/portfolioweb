@@ -59,8 +59,9 @@ function Navbar(props) {
                 </div>
                 <ul className={styles.menulist}>
                   <li>Projects</li>
+                  <li>Explore Blog</li>
                   <li>Feedback</li>
-                  <li>About</li>
+                  <li>About me</li>
                 </ul>
                 <div className={styles.menuBtnContainer}>
                   <button className={styles.hiremebtn}>Hire-Me</button>
