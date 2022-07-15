@@ -65,6 +65,25 @@ body {
 .btndef:active{
   transform: scale(0.890);
 }
+.hbadge{
+  display: grid;
+  width: max-content;
+  padding: 0.3em 0.5em 0.3em 0;
+  border-bottom: 2px dashed #f2f2f249;
+}
+.hbadge .hbh{
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
+}
+.hbadge .hbt{
+  margin-top: -0.5em;
+  padding: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2397DE;
+}
 @keyframes show {
   from{
     background: #aeaeaa00;

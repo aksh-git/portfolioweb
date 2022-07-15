@@ -1,12 +1,8 @@
 .mainbanner{
-  /* background-size: 100% auto;
-  background-repeat: no-repeat;
-  text-align: center;
-  background-color: #aeaeaa2f; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  min-height: 100%;
+  min-height: 80vh;
 }
 .welcometxt{
   width: 60%;
@@ -48,8 +44,14 @@
 .social a{
   margin-right: 1em;
 }
-.social a:hover{
+.social a:hover,.techstack a:hover{
   filter: drop-shadow(0 2px 1px #2396dec4);
+}
+.techstack{
+  padding: 3em 0 3em 0;
+}
+.techstack a{
+  margin-right: 0.5em;
 }
 @keyframes textAnimate {
   0% {
@@ -64,6 +66,9 @@
   }
 }
 @media only screen and (max-width: 900px) {
+  .main{
+    border-bottom: 2px solid #ffffff42;
+  }
   .bannerRight{
     position: absolute;
     top: 0;
@@ -76,8 +81,8 @@
     position: relative;
     z-index: 10;
   }
-  .hometxt div{
-    font-size: 26px;
+  .hometxt .decp{
+    font-size: 20px !important;
     margin-bottom: 10px;
   }
   .welcometxt .hometxt p{
