@@ -39,6 +39,32 @@ body {
 .dgboh:hover{
   box-shadow: 0 0 2px #CC3E4A;
 }
+.divider{
+  position: relative;
+  margin: 1em 0;
+  width: 100%;
+  padding: 1px;
+  border-bottom: 2px solid #aeaeaa2f;
+}
+.btndef{
+  all: unset;
+  background-color: #aeaeaa2f;
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 450;
+  letter-spacing: 0.3px;
+  margin: 5px 0;
+  transition: color 100ms ease;
+}
+.btndef:hover{
+  box-shadow: 0 0 4px #2397DE;
+  color: #2397DE;
+}
+.btndef:active{
+  transform: scale(0.890);
+}
 @keyframes show {
   from{
     background: #aeaeaa00;
@@ -51,4 +77,13 @@ body {
   .container{
     padding: 0 5%;
   }
+  .divider{
+    display: none;
+  }
+}
+@keyframes spin { 
+  100% { 
+    -webkit-transform: rotate(360deg); 
+    transform:rotate(360deg); 
+  } 
 }

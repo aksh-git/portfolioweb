@@ -11,12 +11,27 @@
 .welcometxt{
   width: 60%;
 }
+.welcometxt .hometxt{
+  padding: 0 1.5em;
+}
+.hometxt .hhtext{
+  margin-top: 1em;
+  font-size: 24px;
+  font-weight: 500;
+}
+.hometxt p{
+  font-size: 20px;
+}
 .bannerRight{
   width: 40%;
 }
 .welcometxt svg{
   height: 80px;
   width: 400px;
+}
+.hometxt .decp{
+  font-size: 18px;
+  filter: opacity(0.9);
 }
 .welcometxt svg text {
   font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +40,16 @@
   font-weight: 700;
   fill: #f2f2f2;
   stroke-width: 2;
-  animation: textAnimate alternate 7s 2 forwards;
+  animation: textAnimate alternate 7s infinite;
+}
+.social{
+  margin-top: -1rem;
+}
+.social a{
+  margin-right: 1em;
+}
+.social a:hover{
+  filter: drop-shadow(0 2px 1px #2396dec4);
 }
 @keyframes textAnimate {
   0% {
@@ -51,6 +75,15 @@
     width: 100%;
     position: relative;
     z-index: 10;
+  }
+  .hometxt div{
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .welcometxt .hometxt p{
+    font-size: 22px;
+    float: left;
+    margin-top: 1%;
   }
   .welcometxt svg {
     height: 100%;
